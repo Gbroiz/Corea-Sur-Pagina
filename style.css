@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #eeeeee;
+    color: rgb(24, 23, 23);
+}
+
+header {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    padding: 1rem 3%;
+    background-color: #ffffff;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.bandera-img {
+    width: auto;
+    height: 100px;
+}
+
+.bandera-img:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1rem;
+    color: rgb(24, 23, 23);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #003478;
+    border-bottom: 3px solid #003478;
+}
+
+.contenedor-inicial {
+    position: relative;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/imagen-fondo-corea-sur.avif) no-repeat center center/cover;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vh - 7rem);
+    /* Ajuste para que quede debajo del header */
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-inicial p {
+    text-align: center;
+    font-size: 1rem;
+    color: #c5c5c5;
+    width: 50rem;
+}
+
+.img-fluid {
+    padding-top: 4.6rem;
+}
+
+.contenedor-principal-informacionp {
+    padding: 7rem 30%;
+    background-color: #eeeeee;
+}
+
+.card-titulo{
+    color: #003478;
+    font-weight: 1000;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+}
+
+.tabla-informacion {
+    padding: 7rem 0%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-tabla {
+    font-size: 20px;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #c60c30;
+    color: white;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.contenedor-busan {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 2rem 0; /* Margen superior e inferior */
+}
+
+.contenedor-busan h2{
+    font-weight: 1000;
+    padding-bottom: 1.5%;
+}
+
+.contenedor-busan-imagen {
+    background: no-repeat;
+    background-size: cover;
+    height: 335px;
+    border-radius: 12px;
+    margin-left: 85px; 
+}
+
+.contenedor-texto-derecha{
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 6rem; /* Añade un poco de espacio alrededor del texto */
+}
+
+.contenedor-daegu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 2rem 0; /* Margen superior e inferior */
+    background-color: #eeeeee;
+}
+
+.contenedor-daegu h2{
+    font-weight: 1000;
+    padding-bottom: 1.5%;
+}
+
+.contenedor-daegu-imagen{
+    background: no-repeat;
+    background-size: cover;
+    height: 335px;
+    border-radius: 12px;
+    margin-right: 85px; 
+}
+
+.contenedor-samdalri {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 2rem 0; /* Margen superior e inferior */
+}
+
+.contenedor-samdalri h2{
+    font-weight: 1000;
+    padding-bottom: 1.5%;
+}
+
+.contenedor-samdalri-imagen {
+    background: no-repeat;
+    background-size: cover;
+    height: 335px;
+    border-radius: 12px;
+    margin-left: 85px; 
+}
+
+footer {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/img-corea-sur-footer.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    padding-top: 3%;
+    min-height: 10vh;
+    color: #eeeeee;
+}
